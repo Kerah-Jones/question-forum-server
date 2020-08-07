@@ -6,6 +6,7 @@ curl 'http://localhost:4741/questions' \
     "question": {
       "question": "'"${QUESTION}"'",
       "description": "'"${DESCRIPTION}"'",
+      "category": "'"${CATEGORY}"'",
       "owner": "'"${OWNER}"'"
     }
   }'

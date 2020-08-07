@@ -12,15 +12,15 @@ const handle404 = require('../../lib/custom_errors')
 
 // INDEX
 // GET /questions
-router.get('/questions', requireToken, (req, res, next) => {
+router.get('/questions', (req, res, next) => {
   Question.find()
-    .then(examples => {
+    .then(questions => {
     // `examples` will be an array of Mongoose documents
     // we want to convert each one to a POJO, so we use `.map` to
     // apply `.toObject` to each one
-      return examples.map(example => example.toObject())
+      return questions.map(question => question.toObject())
     })
-    .then(questions => res.json({ questions: questions }))
+    .then(questions => res.status(200).json({ questions: questions }))
     .catch(next)
 })
 
