@@ -12,7 +12,7 @@ const handle404 = require('../../lib/custom_errors')
 
 // INDEX
 // GET /questions
-router.get('/questions', (req, res, next) => {
+router.get('/questions', requireToken, (req, res, next) => {
   Question.find()
     .then(questions => {
     // `examples` will be an array of Mongoose documents
@@ -30,7 +30,7 @@ router.get('/questions/:id', (req, res, next) => {
   const id = req.params.id
   Question.findById(id)
     .populate('owner')
-    .populate('reviews.reviewer')
+    .populate('answers.answerer')
     .then(handle404)
     .then(question => res.json({question: question}))
     .catch(next)
