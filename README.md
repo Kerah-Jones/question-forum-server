@@ -189,7 +189,7 @@ If the request is successful, the response will have an HTTP Status of 201 Creat
       "_id": "an example question id",
       "question": "why is the sky blue?",
       "description": "want to know the answer",
-      "category": "science"
+      "category": "science",
       "createdAt": "2020-07-21T00:30:32.527Z",
       "updatedAt": "2020-07-21T00:31:11.421Z"
     }
