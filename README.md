@@ -193,8 +193,8 @@ If the request is successful, the response will have an HTTP Status of 201 Creat
   ]
 }
 ```
-
 If the request is unseccussful, the response will have an HTTP Status of 400 Bad Request, and the body will be JSON describing the errors.
+```
 
 # Future Developement Plans
 
