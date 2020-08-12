@@ -131,9 +131,9 @@ The `sign-out` and `change-password` requests must include a valid HTTP header
 ## Questions (GET)
 ### index
 The `index` action is a _GET_ that retrieves all of the questions in that are currently stored on the database. The response status will be 200 OK, and the response body will contain JSON containing an array of questions, e.g.:
-```
+```json
 {
-    "questions": [
+    "question": [
         {
             "_id": "an example question id",
             "question": "why is the sky blue?",
@@ -152,6 +152,7 @@ If the request is unsuccessful, the response will have an HTTP Status of 500 Int
 ### Create Question (POST)
 
 The `create` action expects a POST with a token of the user. If the request is successful, the response will have an HTTP Status of 201 Created, and the body will contain JSON of the created question.
+```json
 {
 	"questions": [
 		{
@@ -168,7 +169,8 @@ The `create` action expects a POST with a token of the user. If the request is s
 ### Edit Question (PATCH)
 
 This `update` expects a PATCH request with changes to an existing question, with a body formatted as such:
-```
+
+```json
 {
   "question": {
     "_id": "an example question id",
@@ -179,7 +181,8 @@ This `update` expects a PATCH request with changes to an existing question, with
 }
 ```
 If the request is successful, the response will have an HTTP Status of 201 Created, and the body will contain JSON of the updated question.
-```
+
+```json
 {
   "questions": [
     {
@@ -194,7 +197,7 @@ If the request is successful, the response will have an HTTP Status of 201 Creat
 }
 ```
 If the request is unseccussful, the response will have an HTTP Status of 400 Bad Request, and the body will be JSON describing the errors.
-```
+
 
 # Future Developement Plans
 
