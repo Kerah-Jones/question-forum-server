@@ -8,7 +8,7 @@ to create, update, edit, and delete questions. Features of answering questions i
 https://kerah-jones.github.io/qestion-forum-client/#/
 
 ### Front-End Respository
-https://github.com/kerah-jones/question-forum-client
+https://github.com/Kerah-Jones/qestion-forum-client
 
 ### Deployed API
 https://damp-meadow-09654.herokuapp.com/
