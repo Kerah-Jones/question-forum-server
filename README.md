@@ -5,7 +5,7 @@ to create, update, edit, and delete questions. Features of answering questions i
 # Links
 
 ### Deployed Client Site
-https://kerah-jones.github.io/question-forum/
+https://kerah-jones.github.io/qestion-forum-client/#/
 
 ### Front-End Respository
 https://github.com/kerah-jones/question-forum-client
