@@ -229,4 +229,4 @@ If the request is unseccussful, the response will have an HTTP Status of 400 Bad
 12. Name the new repository with the same name used on Step 5.
 14. Follow instructions on pushing code on respository set up page on Github account.
 13. To begin running sever run `nodemon server.js`
-14. Note you can only send requests to the api on front-end if it is already running in terminal, both on localhost:4741. Please see https://github.com/kerah-jones/question-forum-client for instructions.
+14. Note you can only send requests to the api on front-end if server is already running in terminal, localhost:4741. Please see https://github.com/kerah-jones/question-forum-client for instructions to run front-end in browser localhost:7165.
